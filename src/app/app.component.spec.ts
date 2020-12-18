@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'woocommerce-ws'`, () => {
+  it(`should have as title 'woocommerce-website'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('woocommerce-ws');
+    expect(app.title).toEqual('woocommerce-website');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('woocommerce-ws app is running!');
+    expect(compiled.querySelector('.content span').textContent).toContain('woocommerce-website app is running!');
   });
 });
