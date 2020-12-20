@@ -1,0 +1,46 @@
+
+<html>
+  <head>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8">
+          <p class="font-weight-normal">Product Details</p>
+        </div>
+        <div class="col-lg-4">
+          <a routerLink ="add-product">Add Products</a>
+        </div>
+      </div>
+
+    </div>
+
+    <table class="table table-striped">
+      <thead>
+      <tr>
+        <th scope="col">Product ID</th>
+        <th scope="col">SKU</th>
+        <th scope="col">Name</th>
+        <th scope="col">Image</th>
+        <th scope="col">Edit</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let country of countries; index as i">
+        <th scope="row">{{ i + 1 }}</th>
+        <td>
+          <img [src]="'https://upload.wikimedia.org/wikipedia/commons/' + country.flag" class="mr-2" style="width: 20px">
+          {{ country.name }}
+        </td>
+        <td>{{ country.area | number }}</td>
+        <td>{{ country.population | number }}</td>
+        <td><button type="button" class="btn btn-secondary">Secondary</button></td>
+      </tr>
+      </tbody>
+    </table>
+
+  </body>
+</html>
+
+<router-outlet></router-outlet>
+
