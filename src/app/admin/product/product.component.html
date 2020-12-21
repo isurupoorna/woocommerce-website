@@ -1,6 +1,7 @@
 
 <html>
   <head>
+
   </head>
   <body>
     <div class="container">
@@ -9,7 +10,7 @@
           <p class="font-weight-normal">Product Details</p>
         </div>
         <div class="col-lg-4">
-          <a routerLink ="add-product">Add Products</a>
+          <button type="button" [routerLink]="'products/add-product'" class="btn btn-secondary">Add Products</button>
         </div>
       </div>
 
@@ -19,7 +20,7 @@
       <thead>
       <tr>
         <th scope="col">Product ID</th>
-        <th scope="col">SKU</th>
+        <th scope="col">SKU </th>
         <th scope="col">Name</th>
         <th scope="col">Image</th>
         <th scope="col">Edit</th>
@@ -42,5 +43,5 @@
   </body>
 </html>
 
-<router-outlet></router-outlet>
+
 

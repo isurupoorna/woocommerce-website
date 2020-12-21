@@ -14,6 +14,9 @@ import { AddProductComponent } from './add-product/add-product.component';
   imports: [
     CommonModule,
     AdminRoutingModule
+  ],
+  exports: [
+    AddProductComponent
   ]
 })
 export class AdminModule { }
