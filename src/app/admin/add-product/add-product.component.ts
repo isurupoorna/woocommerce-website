@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ProductComponent } from "../product/product.component";
+
 @Component({
   selector: 'app-add-product',
   templateUrl: './add-product.component.html',
@@ -7,9 +7,13 @@ import { ProductComponent } from "../product/product.component";
 })
 export class AddProductComponent implements OnInit {
 
+
+
   constructor() { }
 
   ngOnInit(): void {
   }
+
+
 
 }
